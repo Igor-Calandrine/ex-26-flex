@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+.container {
+    background-color: rgb(13, 13, 89);
+    display: flex;
+    flex-direction: row;
+}
+
+.itens {
+    background-color: rgb(98, 237, 191);
+    border: 1px solid black;
+}
+
+.container1 {
+    background-color: rgb(13, 13, 89);
+    display: flex;
+    flex-direction: column;
+}
+
+.itens1 {
+    background-color: rgb(98, 237, 191);
+    text-align: center;
+    border: 1px solid black;
+}
+
+.container2 {
+    background-color: rgb(13, 13, 89);
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.itens2 {
+    background-color: rgb(98, 237, 191);
+    text-align: center;
+    border: 1px solid black;
+}
+
+.container3 {
+    background-color: rgb(13, 13, 89);
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.itens3 {
+    background-color: rgb(98, 237, 191);
+    text-align: center;
+    border: 1px solid black;
+    
+}
