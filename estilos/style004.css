@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+.container {
+    background-color: rgb(127, 16, 246);
+    display: flex;
+    flex-flow: row wrap-reverse;
+}
+
+.itens {
+    background-color: rgb(253, 157, 13);
+    text-align: center;
+    align-content: center;
+    height: 30px;
+    width: 150px;
+    border: 1px solid black;
+    flex: auto;
+}

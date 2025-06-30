@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style003.css">
+    <title>Flex-Wrap</title>
+</head>
+<body>
+
+    <h1>Flex-Wrap </h1>
+
+    <p>Obserserve o comportamento dos itens abaixo em que eles diminuem de tamanho se mantendo na mesma linha, por padrão temos a configuração:</p>
+    <p><strong>flex-wrap: nowrap;</strong></p>
+
+    
+
+    <div class="container">
+        <div class="itens">A</div>
+        <div class="itens">B</div>
+        <div class="itens">C</div>
+        <div class="itens">D</div>
+        <div class="itens">E</div>
+    </div>
+    
+    <p>Podemos configurar para que os itens dentro do container quebrem com:</p>
+    <p>É importante saber que irá quebrar sempre na direção do cross-axsis</p>
+    <p><strong>flex-wrap: wrap;</strong></p>
+
+    <div class="container1">
+        <div class="itens1">A</div>
+        <div class="itens1">B</div>
+        <div class="itens1">C</div>
+        <div class="itens1">D</div>
+        <div class="itens1">E</div>
+    </div>
+
+    <p>Assim também podemos configurar para que quebre na direção reversa ao cross-axis:</p>
+    <p><strong>flex-wrap: wrap-reverse;</strong></p>
+
+    <div class="container2">
+        <div class="itens2">A</div>
+        <div class="itens2">B</div>
+        <div class="itens2">C</div>
+        <div class="itens2">D</div>
+        <div class="itens2">E</div>
+    </div>
+
+    <p>Observe que se configurarmos <strong>flex: auto;</strong>, a caixa que quebrar irá ocupar todo o espaço.</p>
+    <div class="container3">
+        <div class="itens3">A</div>
+        <div class="itens3">B</div>
+        <div class="itens3">C</div>
+        <div class="itens3">D</div>
+        <div class="itens3">E</div>
+    </div>
+
+
+
+
+</body>
+</html>
