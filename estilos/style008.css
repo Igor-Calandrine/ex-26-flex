@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+.container {
+    background-color: rgb(119, 0, 255);
+    height: 200px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    
+}
+
+.item {
+    background-color: rgb(248, 87, 0);
+    padding: 15px;
+    border: 1px solid black;
+}
+
+#item1 {
+    align-self: flex-start;
+}
+
+#item2 {
+    align-self: center;
+}
+
+#item3 {
+    align-self: end;
+}
+
+#item4 {
+    align-self: stretch;
+}
+
+#item5 {
+    align-self: auto;
+}
+
+#item6 {
+    align-self: flex-start;
+}
+
+#item7 {
+    align-self: flex-end;
+}
