@@ -49,8 +49,8 @@
 }
 
 img {
-    display: inline;
+    display: block;
     margin: auto;
-    width: 40vw;
+    width: 70vw;
     
 }

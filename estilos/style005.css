@@ -46,7 +46,7 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    align-content:stretch;
+    align-items:stretch;
 }
 
 .itens2 {
@@ -61,12 +61,12 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    align-content:baseline;
+    align-items:center;
 }
 
 .itens3 {
     background-color: rgb(253, 101, 0);
-    width: 150px;
+    width: 50px;
     height: 50px;
     border: 1px solid black;
 }
