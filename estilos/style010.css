@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+.container {
+    width: 85vw;
+    margin: auto;
+    background-color: rgb(46, 1, 172);
+    padding: 3px;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+.item {
+    background-color: rgb(255, 148, 61);
+    padding: 8px;
+    flex-basis: 150px;
+    border-radius: 10px;
+    margin: 2px;
+    text-align: center;
+}
+
+#item1 {
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+#item2 {
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+#item3 {
+    flex-shrink: 0;
+    flex-grow: 2;
+}
