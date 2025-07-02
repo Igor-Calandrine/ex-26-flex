@@ -11,15 +11,50 @@
     <p><strong>Flex-Shrink</strong> - está relacionado a <strong>redução</strong> de tamanho do item de acordo com o display.</p>
     <p><strong>Flex-Grow</strong> - Está relacionado com o <strong>aumento</strong> do tamanho do item de acordo com o display.</p>
     <p>Por padrão teremos a configuração</p>
-    <p>flex-shrink: 1</p>
     <p>flex-grow: 0</p>
+    <p>flex-shrink: 1</p>
     <p>É importantente saber que o número que indica a proporção do aumento ou redução, sempre será proporcional ao demais, ou seja, dois itens com o atributo 2, terá um crescimentou ou redução de mesma proporção como se fossem 1.</p>
     
 
     <div class="container">
-        <div class="item" id="item1">S0-G0</div>
-        <div class="item" id="item2">S1-G1</div>
-        <div class="item" id="item3">S0-G2</div>
+        <div class="item" id="item1">G0-S0</div>
+        <div class="item" id="item2">G1-S1</div>
+        <div class="item" id="item3">G2-S0</div>
     </div>
+
+    <h1>Flex</h1>
+    <p><strong>Flex</strong> - É uma forma simplificada em que será configurado de acordo com a sequência abaixo:</p>
+    <p><strong>flex: flex-grow    flex-shrink    flex-basis</strong></p>
+
+    <div class="container">
+        <div class="item" id="item4">0 0 100px</div>
+        <div class="item" id="item5">1 1 250px</div>
+        <div class="item" id="item6">2 0 auto</div>
+    </div>
+
+    <h1>Outros Simplificações</h1>
+    <p>Temos as siguintes simplificações criadas</p>
+    <p>Configurações Iniciais</p>
+    <section>
+        <p>flex: 0 1 auto</p>
+        <p>flex: initial</p>
+    </section>
+    <p>Configurações sem variações de tamanho</p>
+    <section>
+        <p>flex: 0 0 auto</p>
+        <p>flex: none</p>
+    </section>
+    <p>Configrações para todas variações</p>
+    <section>
+        <p>flex: 1 1 auto</p>
+        <p>flex: auto</p>
+    </section>
+    <p>Configrações para variação apenas de crescimento, as outras serão padrão.</p>
+    <section>
+        <p>flex: 5 1 auto</p>
+        <p>flex: 5</p>
+    </section>
+
+
 </body>
 </html>
