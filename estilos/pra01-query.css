@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+@media screen and (min-width:600px) {
+
+    header h1 {
+    height: 130px;
+    text-align: center;
+    }
+
+    header div {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: start;
+        gap: 5px;
+    }
+
+    header div i {
+        margin: 0px;
+        height: 47px;
+        flex-basis: 70px;
+        align-self: flex-end;
+    }
+
+    header div ul {
+        width: 100vw;
+        display: flex;
+        gap: 5px;
+    }
+
+    header div ul li {
+        font-size: 0.8em;
+        flex-basis: 75px;
+        margin: 0px;
+}
+
+    #icone {
+        display: none;
+    }
+}  
+
+@media screen and (min-width: 900px){
+    body {
+        width: 80vw;
+        margin: auto;
+    }
+
+    header {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    header h1 {
+    display: flex;
+    width: 25vw;
+    }
+
+    header div {
+        width: 600px;
+        align-self: flex-end;
+    }
+
+    header ul {
+        justify-content: end;
+    }
+
+    header div ul li {
+        font-size: 1em;
+        flex-basis: 100px;
+        
+}
+
+
+}
