@@ -8,19 +8,19 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
     <title>Meu Site</title>
 </head>
-<body   onresize="TelaMaior()">
+<body onresize="TelaMaior()">
     <header>
         <h1>Meu Site</h1>
-        <div>
+            
+        <nav>
             <i class="material-symbols-outlined" id="icone" onclick="ClickMenu()">menu</i>
-            <ul id="menu">
-                <li><a href="#">Opção 1</a></li>
-                <li><a href="#">Opção 2</a></li>
-                <li><a href="#">Opção 3</a></li>
-                <li><a href="#">Opção 4</a></li>
-                <li><a href="#">Opção 5</a></li>
-            </ul>
-        </div>
+            <a class="menuOp" id="menuOp1" href="#">Opção 1</a>
+            <a class="menuOp" id="menuOp2" href="#">Opção 2</a>
+            <a class="menuOp" id="menuOp3" href="#">Opção 3</a>
+            <a class="menuOp" id="menuOp4" href="#">Opção 4</a>
+            <a class="menuOp" id="menuOp5" href="#">Opção 5</a>
+        </nav>
+        
     </header>
     <main>
         <h2>Meu Título</h2>
@@ -32,34 +32,39 @@
     <script>
         function ClickMenu() {
             let icone = document.getElementById("icone")
-            let menu = document.getElementById("menu")
+            let menu = document.getElementsByClassName("menuOp")
 
-            if (menu.style.display == "block") {
-                menu.style.display = "none";
-                icone.style.backgroundColor = "black";
-                icone.style.color = "white"
+
+            if (menu[0].style.display != "none") {
+                for (i=0; i < menu.length; i++) {
+                menu[i].style.display = "none";
+                }
+                icone.style.backgroundColor = "gray";
+                icone.style.color = "black";
             }
 
             else {
-                menu.style.display = "block"
+                for (i=0; i < menu.length; i++) {
+                menu[i].style.display = ""
+                }
                 icone.style.backgroundColor = "";
-                icone.style.color = ""
+                icone.style.color = "";
             }
         }
 
         function TelaMaior() {
-            let menu = document.getElementById("menu") 
+            let menu = document.getElementsByClassName("menuOp") 
 
             if (window.innerWidth > 600) {
-                menu.style.display = "flex";
+                for (i=0; i < menu.length; i++) {
+                menu[i].style.display = "";
+                }
             }
 
             else {
-                menu.style.display = "";
                 icone.style.backgroundColor = "";
-                icone.style.color = ""
+                icone.style.color = "";
             }
-
         }
     </script>
 

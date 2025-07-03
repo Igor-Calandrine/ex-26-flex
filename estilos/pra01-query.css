@@ -1,76 +1,38 @@
 @charset "UTF-8";
 
-@media screen and (min-width:600px) {
-
-    header h1 {
-    height: 130px;
-    text-align: center;
-    }
-
-    header div {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: start;
-        gap: 5px;
-    }
-
-    header div i {
-        margin: 0px;
-        height: 47px;
-        flex-basis: 70px;
-        align-self: flex-end;
-    }
-
-    header div ul {
-        width: 100vw;
-        display: flex;
-        gap: 5px;
-    }
-
-    header div ul li {
-        font-size: 0.8em;
-        flex-basis: 75px;
-        margin: 0px;
-}
-
-    #icone {
-        display: none;
-    }
-}  
-
-@media screen and (min-width: 900px){
-    body {
-        width: 80vw;
-        margin: auto;
-    }
-
+@media screen and (max-width:599px){
     header {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-
+    width: 100vw;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    
+}
     header h1 {
-    display: flex;
-    width: 25vw;
+        flex: 0 0 75px;
     }
 
-    header div {
-        width: 600px;
-        align-self: flex-end;
-    }
-
-    header ul {
-        justify-content: end;
-    }
-
-    header div ul li {
-        font-size: 1em;
-        flex-basis: 100px;
+    header nav {
+        margin: 0px;
+        flex-flow: column nowrap;
+        gap: 4px;
+        align-self: stretch;
         
 }
 
+    #icone {
+        display: initial;
+    }
 
+    header nav a {
+        font-size: 1em;
+        padding: 8px;
+        flex: 1 1 10px;
+    }
+
+    main {
+        width: 100vw;
+}
+
+
+    
 }
